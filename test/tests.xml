@@ -1,2 +1,49 @@
 <test>
+    <!-- Основной сценарий: входные фразы и дособор параметров -->
+    <dialog>
+        <request>хочу записаться на первое ТО</request>
+        <response>Давайте оформим заявку на ТО</response>
+    </dialog>
+    <dialog>
+        <request>меня зовут иван иванов</request>
+        <response>Принял. Укажите номер телефона</response>
+    </dialog>
+    <dialog>
+        <request>мой телефон 8 (999) 123-45-67</request>
+        <response>Спасибо. Осталось указать ФИО или марку автомобиля.</response>
+    </dialog>
+    <dialog>
+        <request>марка авто шкода</request>
+        <response>Оформляю заявку на техобслуживание на следующие данные:</response>
+    </dialog>
+
+    <!-- Вариант: изначально хватает 2 параметров -->
+    <dialog>
+        <request>запиши меня на техобслуживание, я Петров Петр, телефон 79991234567</request>
+        <response>Оформляю заявку на техобслуживание на следующие данные:</response>
+    </dialog>
+
+    <!-- FAQ -->
+    <dialog>
+        <request>какое у вас время работы?</request>
+        <response>Мы работаем ежедневно</response>
+    </dialog>
+    <dialog>
+        <request>сколько стоит ТО?</request>
+        <response>Стоимость ТО зависит</response>
+    </dialog>
+
+    <!-- Smalltalk -->
+    <dialog>
+        <request>привет</request>
+        <response>Здравствуйте! Чем могу помочь?</response>
+    </dialog>
+    <dialog>
+        <request>спасибо</request>
+        <response>Пожалуйста!</response>
+    </dialog>
+    <dialog>
+        <request>пока</request>
+        <response>До свидания!</response>
+    </dialog>
 </test>
